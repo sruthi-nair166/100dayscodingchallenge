@@ -3,7 +3,14 @@ const addBtn = document.getElementById("add");
 const tasksBox = document.querySelector("#tasks");
 const tasksEmpty = document.querySelector(".tasks-empty");
 
-const colors = ["#eaf5f6", "#fff9eb", "#efefff", "#fde6eaff"];
+const colors = [
+  "#fff9d8",
+  "#f0eee9",
+  "#ffe4e4",
+  "#dffaff",
+  "#eaf5f6",
+  "#f6f2ffff",
+];
 let isEditing = false;
 let editTaskBox = null;
 let taskArray = [];
@@ -18,7 +25,7 @@ addBtn.addEventListener("click", () => {
       const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
       tasksBox.innerHTML += `<div style="background-color: ${randomColor}" class="task-box">
-      <p>${input.value}</p>
+      <p class="input-value">${input.value}</p>
       <button class="edit">Edit</button>
     </div>`;
     } else {
@@ -43,6 +50,8 @@ addBtn.addEventListener("click", () => {
     }
     input.value = "";
     addBtn.textContent = "Add Task";
+    addBtn.style.backgroundColor = "rgb(128, 188, 147)";
+    addBtn.style.color = "white";
     isEditing = false;
   }
 });
@@ -59,5 +68,7 @@ function handleEdit(e) {
   editTaskBox = e.target.parentElement;
   input.value = editTaskBox.querySelector(".input-value").textContent;
   addBtn.textContent = "Save";
+  addBtn.style.backgroundColor = "rgba(254, 218, 153)";
+  addBtn.style.color = "black";
   console.log(editTaskBox);
 }
