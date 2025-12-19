@@ -10,13 +10,92 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0 4rem;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-box {
+  text-align: center;
+  border: 2.5px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-box {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.input-box input {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+  flex: 1;
+}
+
+.input-box button {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: rgb(128, 188, 147);
+}
+
+.tasks-empty {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px dashed rgb(155, 155, 155);
+  color: rgb(155, 155, 155);
+  border-radius: 0.3rem;
 }
 
 .task-box {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.task-box p {
+  text-align: left;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
+}
+
+.task-box button {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+  background-color: rgba(254, 218, 153);
 }
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 430px) {
+  .input-box {
+    flex-direction: column;
+  }
+  .task-box {
+    flex-direction: column;
+  }
+  .task-box button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
 }

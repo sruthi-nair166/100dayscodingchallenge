@@ -3,6 +3,7 @@ const addBtn = document.getElementById("add");
 const tasksBox = document.querySelector("#tasks");
 const tasksEmpty = document.querySelector(".tasks-empty");
 
+const colors = ["#eaf5f6", "#fff9eb", "#efefff", "#fde6eaff"];
 let isEditing = false;
 let editTaskBox = null;
 let taskArray = [];
@@ -14,8 +15,10 @@ addBtn.addEventListener("click", () => {
 
       tasksEmpty.classList.toggle("hidden", taskArray.length !== 0);
 
-      tasksBox.innerHTML += `<div class="task-box">
-      <p class="input-value">${input.value}</p>
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+      tasksBox.innerHTML += `<div style="background-color: ${randomColor}" class="task-box">
+      <p>${input.value}</p>
       <button class="edit">Edit</button>
     </div>`;
     } else {
