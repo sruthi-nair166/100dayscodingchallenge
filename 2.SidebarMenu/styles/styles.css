@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: rgb(75, 75, 75);
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  background-color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  padding: 1rem 2rem;
+  display: block;
+}
+
+.login {
+  background-color: blue;
+  margin-left: auto;
+}
+
+.login:hover {
+  background-color: rgb(83, 83, 255);
+}
