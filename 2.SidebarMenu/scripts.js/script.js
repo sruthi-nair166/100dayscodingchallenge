@@ -29,6 +29,8 @@ function closeMenu() {
   overlay.classList.remove("show");
   menuBtn.setAttribute("aria-expanded", false);
   navMenu.setAttribute("inert", "");
+
+  updateNavbar(screenWidth);
 }
 
 menuBtn.addEventListener("click", openMenu);
