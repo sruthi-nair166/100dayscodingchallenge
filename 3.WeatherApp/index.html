@@ -14,14 +14,18 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./styles.css/styles.css" />
   </head>
   <body>
-    <main class="bg-light">
+    <main class="bg-light-subtle">
       <div
         class="container min-vh-100 d-flex align-items-center justify-content-center"
       >
-        <div class="card shadow-lg border-0 rounded-5 weather-card">
+        <div
+          id="weather-card"
+          class="card shadow-lg border-0 rounded-5 bg-secondary"
+        >
           <div class="card-body p-4">
             <div class="input-group mb-3">
               <input
@@ -34,7 +38,7 @@
               </button>
             </div>
 
-            <div id="loading" class="text-center text-white d-none">
+            <div id="loading" class="text-center text-secondary d-none">
               <div class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
               </div>
@@ -46,24 +50,24 @@
               role="alert"
             ></div>
 
-            <div class="text-center mb-2">
-              <h2 id="city-name" class="fs-1 text-white fw-light">--</h2>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h2 id="city-name" class="fs-1 text-white fw-normal">--</h2>
+              <h2 id="day-night" class="text-white fs-4 fw-light">--</h2>
             </div>
 
             <div
-              class="d-flex flex-column flex-sm-row text-center text-white mb-4 justify-content-center align-items-center gap-4"
+              class="d-flex text-center text-white mb-4 justify-content-center align-items-center gap-4"
             >
               <div class="" id="weather-content">
-                <i id="weather-icon" class="fa-solid fa-cloud-moon"></i>
+                <i id="weather-icon" class="fa-solid fa-sun"></i>
               </div>
               <div class="">
                 <h1 id="temperature" class="display-1 fw-bold text-white">
                   --°C
                 </h1>
-                <p
-                  id="description"
-                  class="text-white-50 text-capitalize fs-5"
-                ></p>
+                <p id="description" class="text-white-50 text-capitalize fs-5">
+                  ---
+                </p>
               </div>
             </div>
 
@@ -75,7 +79,7 @@
                   class="d-flex justify-content-center align-items-center gap-2 mb-2"
                 >
                   <i class="fa-solid fa-cloud-rain fs-4"></i>
-                  <h3 id="precipitation" class="fs-5 fw-bold mb-0">--%</h3>
+                  <h3 id="precipitation" class="fs-6 fw-bold mb-0">--mm</h3>
                 </div>
                 <p class="mb-0 text-center text-white-50">Precipitation</p>
               </div>
@@ -112,5 +116,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts.js/script.js"></script>
   </body>
 </html>
