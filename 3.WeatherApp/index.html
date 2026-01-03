@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css/styles.css" />
+  </head>
+  <body>
+    <main class="bg-light">
+      <div
+        class="container min-vh-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="card shadow-lg border-0 rounded-5 weather-card">
+          <div class="card-body p-4">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                id="city-name-input"
+                class="form-control form-control-lg border-0 shadow-sm"
+              />
+              <button class="btn btn-light shadow-sm" id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+            <div id="loading" class="text-center text-white d-none">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+
+            <div
+              id="error"
+              class="alert alert-danger d-none"
+              role="alert"
+            ></div>
+
+            <div class="text-center mb-2">
+              <h2 id="city-name" class="fs-1 text-white fw-light">--</h2>
+            </div>
+
+            <div
+              class="d-flex flex-column flex-sm-row text-center text-white mb-4 justify-content-center align-items-center gap-4"
+            >
+              <div class="" id="weather-content">
+                <i id="weather-icon" class="fa-solid fa-cloud-moon"></i>
+              </div>
+              <div class="">
+                <h1 id="temperature" class="display-1 fw-bold text-white">
+                  --°C
+                </h1>
+                <p
+                  id="description"
+                  class="text-white-50 text-capitalize fs-5"
+                ></p>
+              </div>
+            </div>
+
+            <div
+              class="row text-white border-0 rounded-4 py-3 mx-1 mt-4 mb-1 align-items-center transparent-bg"
+            >
+              <div class="col-sm col-6 text-center border-end border-white">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 mb-2"
+                >
+                  <i class="fa-solid fa-cloud-rain fs-4"></i>
+                  <h3 id="precipitation" class="fs-5 fw-bold mb-0">--%</h3>
+                </div>
+                <p class="mb-0 text-center text-white-50">Precipitation</p>
+              </div>
+
+              <div
+                class="col-sm col-6 text-center border-end border-white border-erase"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 mb-2"
+                >
+                  <i class="fa-solid fa-droplet fs-5"></i>
+                  <h3 id="humidity" class="fs-5 fw-bold mb-0">--%</h3>
+                </div>
+                <p class="mb-0 text-center text-white-50">Humidity</p>
+              </div>
+
+              <div class="col-sm text-center">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2 mb-2 mt-sm-0 mt-3"
+                >
+                  <i class="fa-solid fa-wind fs-5"></i>
+                  <h3 id="wind-speed" class="fs-6 fw-bold mb-0">--km/h</h3>
+                </div>
+                <p class="mb-0 text-center text-white-50">Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
