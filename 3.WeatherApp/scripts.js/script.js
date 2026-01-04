@@ -1,3 +1,4 @@
+const weatherContent = document.getElementById("weather-content");
 const cityNameInput = document.getElementById("city-name-input");
 const searchBtn = document.getElementById("search-btn");
 const loading = document.getElementById("loading");
@@ -99,10 +100,12 @@ function reset() {
 async function getWeatherData(city) {
   try {
     loading.classList.remove("d-none");
+    weatherContent.classList.add("d-none");
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0ac0c9808044f1f82dbec770253eef75&units=metric`
     );
     loading.classList.add("d-none");
+    weatherContent.classList.remove("d-none");
 
     if (!response.ok) throw new Error("City not found");
 

@@ -38,7 +38,7 @@
               </button>
             </div>
 
-            <div id="loading" class="text-center text-secondary d-none">
+            <div id="loading" class="text-center text-white d-none">
               <div class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
               </div>
@@ -50,60 +50,67 @@
               role="alert"
             ></div>
 
-            <div class="d-flex justify-content-between align-items-center mb-2">
-              <h2 id="city-name" class="fs-1 text-white fw-normal">--</h2>
-              <h2 id="day-night" class="text-white fs-4 fw-light">--</h2>
-            </div>
-
-            <div
-              class="d-flex text-center text-white mb-4 justify-content-center align-items-center gap-4"
-            >
-              <div class="" id="weather-content">
-                <i id="weather-icon" class="fa-solid fa-sun"></i>
-              </div>
-              <div class="">
-                <h1 id="temperature" class="display-1 fw-bold text-white">
-                  --°C
-                </h1>
-                <p id="description" class="text-white-50 text-capitalize fs-5">
-                  ---
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="row text-white border-0 rounded-4 py-3 mx-1 mt-4 mb-1 align-items-center transparent-bg"
-            >
-              <div class="col-sm col-6 text-center border-end border-white">
-                <div
-                  class="d-flex justify-content-center align-items-center gap-2 mb-2"
-                >
-                  <i class="fa-solid fa-cloud-rain fs-4"></i>
-                  <h3 id="precipitation" class="fs-6 fw-bold mb-0">--mm</h3>
-                </div>
-                <p class="mb-0 text-center text-white-50">Precipitation</p>
+            <div id="weather-content">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <h2 id="city-name" class="fs-1 text-white fw-normal">--</h2>
+                <h2 id="day-night" class="text-white fs-4 fw-light">--</h2>
               </div>
 
               <div
-                class="col-sm col-6 text-center border-end border-white border-erase"
+                class="d-flex text-center text-white mb-4 justify-content-center align-items-center gap-4"
               >
-                <div
-                  class="d-flex justify-content-center align-items-center gap-2 mb-2"
-                >
-                  <i class="fa-solid fa-droplet fs-5"></i>
-                  <h3 id="humidity" class="fs-5 fw-bold mb-0">--%</h3>
+                <div class="" id="weather-content">
+                  <i id="weather-icon" class="fa-solid fa-sun"></i>
                 </div>
-                <p class="mb-0 text-center text-white-50">Humidity</p>
+                <div class="">
+                  <h1 id="temperature" class="display-1 fw-bold text-white">
+                    --°C
+                  </h1>
+                  <p
+                    id="description"
+                    class="text-white-50 text-capitalize fs-5"
+                  >
+                    ---
+                  </p>
+                </div>
               </div>
 
-              <div class="col-sm text-center">
-                <div
-                  class="d-flex justify-content-center align-items-center gap-2 mb-2 mt-sm-0 mt-3"
-                >
-                  <i class="fa-solid fa-wind fs-5"></i>
-                  <h3 id="wind-speed" class="fs-6 fw-bold mb-0">--km/h</h3>
+              <div
+                class="row text-white border-0 rounded-4 py-3 mx-1 mt-4 mb-1 align-items-center transparent-bg"
+              >
+                <div class="col-sm col-6 text-center border-end border-white">
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-2 mb-2"
+                  >
+                    <i class="fa-solid fa-cloud-rain fs-4"></i>
+                    <h3 id="precipitation" class="fs-6 fw-bold mb-0">--mm</h3>
+                  </div>
+                  <p class="mb-0 text-center text-white-50">Precipitation</p>
                 </div>
-                <p class="mb-0 text-center text-white-50">Wind Speed</p>
+
+                <div
+                  class="col-sm col-6 text-center border-end border-white border-erase"
+                >
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-2 mb-2"
+                  >
+                    <i class="fa-solid fa-droplet fs-5"></i>
+                    <h3 id="humidity" class="fs-5 fw-bold mb-0">--%</h3>
+                  </div>
+                  <p class="mb-0 text-center text-white-50">Humidity</p>
+                </div>
+
+                <div class="col-sm text-center">
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-2 mb-2 mt-sm-0 mt-3"
+                  >
+                    <i class="fa-solid fa-wind fs-5"></i>
+                    <h3 id="wind-speed" class="fs-6 fw-bold mb-0">--km/h</h3>
+                  </div>
+                  <p class="mb-0 text-center text-white-50">Wind Speed</p>
+                </div>
               </div>
             </div>
           </div>
