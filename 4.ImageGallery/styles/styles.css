@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(26, 30%, 91%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 6rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+main {
+  margin: 4rem 6rem;
+}
+
+.description {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  columns: 400px;
+  margin: 3rem 0;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  margin-bottom: 1.5rem;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}

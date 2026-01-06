@@ -4,12 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <header>
+      <button><i class="fa-solid fa-stamp"></i></button>
+      <nav>
+        <li>Home</li>
+        <li>About</li>
+        <li>Collections</li>
+        <li>Contact Us</li>
+      </nav>
+      <div>
+        <button>Login</button>
+        <button>Signup</button>
+      </div>
+    </header>
     <main>
       <h1>Featured Works</h1>
+      <p class="description">
+        A curated selection of notable artworks showcasing a range of styles,
+        periods, and artistic approaches.
+      </p>
       <hr />
+      <div class="gallery"></div>
     </main>
-    <script src="./scripts.js/script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
