@@ -11,28 +11,46 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-      <button><i class="fa-solid fa-stamp"></i></button>
-      <nav>
-        <li>Home</li>
-        <li>About</li>
-        <li>Collections</li>
-        <li>Contact Us</li>
-      </nav>
-      <div>
-        <button>Login</button>
-        <button>Signup</button>
-      </div>
-    </header>
-    <main>
-      <h1>Featured Works</h1>
-      <p class="description">
-        A curated selection of notable artworks showcasing a range of styles,
-        periods, and artistic approaches.
-      </p>
-      <hr />
-      <div class="gallery"></div>
-    </main>
+    <div id="overlay" aria-hidden="true"></div>
+
+    <div>
+      <button id="close-btn" aria-label="close image">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button id="prev" aria-label="Previous image">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <img id="img-highlight" src="" alt="" />
+      <button id="next" aria-label="Next image">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+
+    <div id="page-background">
+      <header>
+        <button><i class="fa-solid fa-stamp"></i></button>
+        <nav>
+          <li>Home</li>
+          <li>About</li>
+          <li>Collections</li>
+          <li>Contact Us</li>
+        </nav>
+        <div>
+          <button>Login</button>
+          <button>Signup</button>
+        </div>
+      </header>
+
+      <main>
+        <h1>Featured Works</h1>
+        <p class="description">
+          A curated selection of notable artworks showcasing a range of styles,
+          periods, and artistic approaches.
+        </p>
+        <hr />
+        <div class="gallery"></div>
+      </main>
+    </div>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

@@ -33,14 +33,14 @@ const artworks = [
   {
     id: 5,
     title: "Mahadevi, the Great Goddess",
-    artist: "unknown",
+    artist: "Artist Unknown",
     year: "1725",
     imageUrl: "https://images.metmuseum.org/CRDImages/as/original/DT4003.jpg",
   },
   {
     id: 6,
     title: "Emperor Xuanzong's flight to Shu",
-    artist: "unknown",
+    artist: "Artist Unknown",
     year: "mid-12th century",
     imageUrl: "https://images.metmuseum.org/CRDImages/as/original/DP247676.jpg",
   },
@@ -71,15 +71,23 @@ const artworks = [
 ];
 
 const gallery = document.querySelector(".gallery");
+const overlay = document.getElementById("overlay");
+const closeBtn = document.getElementById("close-btn");
+const imgHighlight = document.getElementById("img-highlight");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+const pageBackground = document.getElementById("page-background");
 
 artworks.forEach((artwork) => {
   const galleryItem = document.createElement("div");
   galleryItem.className = "gallery-item";
   galleryItem.id = `item-${artwork.id}`;
 
+  const artWrap = document.createElement("button");
   const art = document.createElement("img");
   art.src = artwork.imageUrl;
-  art.style.width = "800px";
+  art.alt = `${artwork.title} by ${artwork.artist}`;
+  artWrap.appendChild(art);
 
   const artTitle = document.createElement("p");
   artTitle.textContent = artwork.title;
@@ -96,9 +104,36 @@ artworks.forEach((artwork) => {
   wrap.appendChild(artist);
   wrap.appendChild(year);
 
-  galleryItem.appendChild(art);
+  galleryItem.appendChild(artWrap);
   galleryItem.appendChild(artTitle);
   galleryItem.appendChild(wrap);
 
   gallery.appendChild(galleryItem);
+});
+
+gallery.addEventListener("click", (e) => {
+  if (e.target.tagName === "IMG") {
+    overlay.style.display = "block";
+    closeBtn.style.display = "block";
+    imgHighlight.style.display = "block";
+    imgHighlight.src = `${e.target.src}`;
+    imgHighlight.alt = `${e.target.alt}`;
+    prevBtn.style.display = "block";
+    nextBtn.style.display = "block";
+
+    pageBackground.setAttribute("inert", "");
+    document.body.style.overflow = "hidden";
+  }
+});
+
+closeBtn.addEventListener("click", () => {
+  overlay.style.display = "none";
+  closeBtn.style.display = "none";
+  imgHighlight.style.display = "none";
+  imgHighlight.src = "";
+  prevBtn.style.display = "none";
+  nextBtn.style.display = "none";
+
+  pageBackground.removeAttribute("inert", "");
+  document.body.style.overflow = "";
 });
