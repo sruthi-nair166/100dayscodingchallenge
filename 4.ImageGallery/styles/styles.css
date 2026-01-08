@@ -59,6 +59,18 @@ body {
   right: 3rem;
 }
 
+#prev:disabled {
+  opacity: 0.3;
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+
+#next:disabled {
+  opacity: 0.3;
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+
 #img-highlight {
   position: fixed;
   scale: 1;

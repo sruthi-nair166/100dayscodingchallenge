@@ -70,8 +70,11 @@ const artworks = [
   },
 ];
 
+let currentImgId;
+
 const gallery = document.querySelector(".gallery");
 const overlay = document.getElementById("overlay");
+const imageViewer = document.getElementById("image-viewer");
 const closeBtn = document.getElementById("close-btn");
 const imgHighlight = document.getElementById("img-highlight");
 const prevBtn = document.getElementById("prev");
@@ -87,6 +90,7 @@ artworks.forEach((artwork) => {
   const art = document.createElement("img");
   art.src = artwork.imageUrl;
   art.alt = `${artwork.title} by ${artwork.artist}`;
+  art.id = artwork.id;
   artWrap.appendChild(art);
 
   const artTitle = document.createElement("p");
@@ -113,6 +117,11 @@ artworks.forEach((artwork) => {
 
 gallery.addEventListener("click", (e) => {
   if (e.target.tagName === "IMG") {
+    currentImgId = Number(e.target.id);
+    prevBtn.disabled = currentImgId === 1;
+    nextBtn.disabled = currentImgId === artworks.length;
+
+    imageViewer.setAttribute("aria-hidden", "false");
     overlay.style.display = "block";
     closeBtn.style.display = "block";
     imgHighlight.style.display = "block";
@@ -127,6 +136,7 @@ gallery.addEventListener("click", (e) => {
 });
 
 closeBtn.addEventListener("click", () => {
+  imageViewer.setAttribute("aria-hidden", "true");
   overlay.style.display = "none";
   closeBtn.style.display = "none";
   imgHighlight.style.display = "none";
@@ -136,4 +146,44 @@ closeBtn.addEventListener("click", () => {
 
   pageBackground.removeAttribute("inert", "");
   document.body.style.overflow = "";
+});
+
+prevBtn.addEventListener("click", () => {
+  if (currentImgId <= 1) {
+    prevBtn.disabled = true;
+    return;
+  }
+
+  artworks.some((artwork, index) => {
+    if (currentImgId === artwork.id) {
+      console.log(currentImgId, artwork.id);
+      imgHighlight.src = artworks[index - 1].imageUrl;
+      currentImgId -= 1;
+      prevBtn.disabled = currentImgId <= 1;
+      nextBtn.disabled = false;
+
+      return true;
+    }
+    return false;
+  });
+});
+
+nextBtn.addEventListener("click", () => {
+  if (currentImgId >= artworks.length) {
+    nextBtn.disabled = true;
+    return;
+  }
+
+  artworks.some((artwork, index) => {
+    if (currentImgId === artwork.id) {
+      console.log(currentImgId, artwork.id);
+      imgHighlight.src = artworks[index + 1].imageUrl;
+      currentImgId += 1;
+      nextBtn.disabled = currentImgId >= artworks.length;
+      prevBtn.disabled = false;
+
+      return true;
+    }
+    return false;
+  });
 });
