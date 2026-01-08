@@ -87,6 +87,7 @@ artworks.forEach((artwork) => {
   galleryItem.id = `item-${artwork.id}`;
 
   const artWrap = document.createElement("button");
+  artWrap.className = "gallery-img-wrap";
   const art = document.createElement("img");
   art.src = artwork.imageUrl;
   art.alt = `${artwork.title} by ${artwork.artist}`;
