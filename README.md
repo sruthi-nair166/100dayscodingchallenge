@@ -14,3 +14,4 @@ This repository contains my daily coding work as part of a 100 day coding challe
 - Day 01 - [Todo List (Add & Edit logic)](1.TodoList/)
 - Day 02 - [Sidebar Menu](2.SidebarMenu/)
 - Day 03 - [Weather App](3.WeatherApp/)
+- Day 04 - [Image Gallery](4.ImageGallery/)
