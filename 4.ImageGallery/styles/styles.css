@@ -22,8 +22,8 @@ body {
 #close-btn {
   display: none;
   position: fixed;
-  top: 3rem;
-  right: 3rem;
+  top: 1rem;
+  right: 1rem;
   background: none;
   border: none;
   color: rgb(199, 199, 199);
@@ -53,11 +53,11 @@ body {
 }
 
 #prev {
-  left: 3rem;
+  left: 1rem;
 }
 
 #next {
-  right: 3rem;
+  right: 1rem;
 }
 
 #prev:disabled {
@@ -95,15 +95,25 @@ header {
 .logo {
   background: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   color: white;
   background-color: rgb(96, 17, 17);
   border: none;
 }
 
 .logo i {
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+.menu {
+  display: none;
+  background: none;
+  border: none;
+}
+
+.menu i {
+  font-size: 1.3rem;
 }
 
 header nav {
@@ -209,4 +219,33 @@ h1 {
 
 .gallery-item:hover img {
   scale: 1.2;
+}
+
+@media (max-width: 768px) {
+  header nav,
+  .btn-wrapper {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  header {
+    margin: 2rem 3rem;
+  }
+  main {
+    margin: 2rem 3rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .gallery {
+    margin: 2rem 0;
+  }
+  #prev {
+    left: 1px;
+  }
+
+  #next {
+    right: 1px;
+  }
 }
