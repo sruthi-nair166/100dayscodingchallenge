@@ -4,6 +4,10 @@
 
 Live link: [https://sruthi-nair166.github.io/100dayscodingchallenge/4.ImageGallery/](https://sruthi-nair166.github.io/100dayscodingchallenge/4.ImageGallery/)
 
+### Overview
+
+A responsive image gallery that displays featured artworks and allows users to view images in a focused modal with next and previous navigation.
+
 ### Screenshot
 
 <img src="./images/gallery.png">
