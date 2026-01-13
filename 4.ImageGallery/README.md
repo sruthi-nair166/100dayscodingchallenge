@@ -10,8 +10,8 @@ A responsive image gallery that displays featured artworks and allows users to v
 
 ### Screenshot
 
-<img src="./images/gallery.png">
-<img style="margin-top: 10px" src="./images/modal-image-viewer.png">
+<img src="./assets/gallery.png">
+<img style="margin-top: 10px" src="./assets/modal-image-viewer.png">
 
 ### What I worked on
 
