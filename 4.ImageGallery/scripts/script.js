@@ -4,69 +4,63 @@ const artworks = [
     title: "The Gulf Stream",
     artist: "Winslow Homer",
     year: "1906",
-    imageUrl:
-      "https://images.metmuseum.org/CRDImages/ad/original/DP-20821-001.jpg",
+    imageUrl: "./assets/images/IMG_01.jpg",
   },
   {
     id: 2,
     title: "Allegory of the Planets and Continents",
     artist: "Giovanni Battista Tiepolo",
     year: "1752",
-    imageUrl:
-      "https://images.metmuseum.org/CRDImages/ep/original/DP-14286-007.jpg",
+    imageUrl: "./assets/images/IMG_02.jpg",
   },
   {
     id: 3,
     title: "Young Ladies of the Village",
     artist: "Gustave Courbet",
     year: "1851-52",
-    imageUrl: "https://images.metmuseum.org/CRDImages/ep/original/DT1967.jpg",
+    imageUrl: "./assets/images/IMG_03.jpg",
   },
   {
     id: 4,
     title: "Wheat Field with Cypresses",
     artist: "Vincent Van Gogh",
     year: "1889",
-    imageUrl:
-      "https://images.metmuseum.org/CRDImages/ep/original/DP-42549-001.jpg",
+    imageUrl: "./assets/images/IMG_04.jpg",
   },
   {
     id: 5,
     title: "Mahadevi, the Great Goddess",
     artist: "Artist Unknown",
     year: "1725",
-    imageUrl: "https://images.metmuseum.org/CRDImages/as/original/DT4003.jpg",
+    imageUrl: "./assets/images/IMG_05.jpg",
   },
   {
     id: 6,
     title: "Emperor Xuanzong's flight to Shu",
     artist: "Artist Unknown",
     year: "mid-12th century",
-    imageUrl: "https://images.metmuseum.org/CRDImages/as/original/DP247676.jpg",
+    imageUrl: "./assets/images/IMG_06.jpg",
   },
   {
     id: 7,
     title: "Whalers",
     artist: "Joseph Mallord William Turner",
     year: "1845",
-    imageUrl:
-      "https://images.metmuseum.org/CRDImages/ep/original/DP-13360-001.jpg",
+    imageUrl: "./assets/images/IMG_07.jpg",
   },
   {
     id: 8,
     title: "Joan of Arc",
     artist: "Jules Bastien-Lepage",
     year: "1879",
-    imageUrl:
-      "https://images.metmuseum.org/CRDImages/ep/original/DP-14201-049.jpg",
+    imageUrl: "./assets/images/IMG_08.jpg",
   },
   {
     id: 9,
     title: "The Horse Fair",
     artist: "Rosa Bonheur",
     year: "1852-55",
-    imageUrl:
-      "https://images.metmuseum.org/CRDImages/ep/original/DP-23550-001.jpg",
+    imageUrl: "./assets/images/IMG_09.jpg",
   },
 ];
 
