@@ -4,6 +4,10 @@
 
 Live link: [https://sruthi-nair166.github.io/100dayscodingchallenge/3.WeatherApp/](https://sruthi-nair166.github.io/100dayscodingchallenge/3.WeatherApp/)
 
+### Overview
+
+A weather application that fetches live weather data and updates the UI based on conditions and time of day.
+
 ### Screenshot
 
 <img src="./images/weather-app.gif">

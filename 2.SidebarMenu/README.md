@@ -4,6 +4,10 @@
 
 Live link: [https://sruthi-nair166.github.io/100dayscodingchallenge/2.SidebarMenu/](https://sruthi-nair166.github.io/100dayscodingchallenge/2.SidebarMenu/)
 
+### Overview
+
+A responsive sidebar navigation menu with smooth open-close transitions and basic accessibility considerations.
+
 ### Screenshot
 
 <img src="./images/sidebar_menu.gif">
