@@ -5,13 +5,13 @@ function Projects({ projects }) {
 
       <div id="card-container">
         {projects.map((project) => (
-          <article class="card">
+          <article className="card" key={project.id}>
             <a href={project.link} target="_blank">
-              <div class="image-wrapper">
+              <div className="image-wrapper">
                 <img src={project.image} alt={project.alt} />
               </div>
 
-              <div class="card-text">
+              <div className="card-text">
                 <h3>{project.title}</h3>
                 <p>{project.desc}</p>
               </div>

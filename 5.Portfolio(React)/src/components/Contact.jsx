@@ -5,13 +5,13 @@ function Contact() {
 
       <fieldset>
         <form>
-          <label for="name">Name:</label>
+          <label htmlFor="name">Name:</label>
           <input type="text" id="name" placeholder="Enter your name" required />
 
           <br />
           <br />
 
-          <label for="email">Email:</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
             id="email"
@@ -22,7 +22,7 @@ function Contact() {
           <br />
           <br />
 
-          <label for="subject">Subject:</label>
+          <label htmlFor="subject">Subject:</label>
           <input
             type="text"
             id="subject"
@@ -33,7 +33,7 @@ function Contact() {
           <br />
           <br />
 
-          <label for="message">Message:</label>
+          <label htmlFor="message">Message:</label>
           <textarea
             id="message"
             placeholder="Enter a message"
@@ -45,7 +45,7 @@ function Contact() {
           <br />
           <br />
 
-          <div class="btn-wrapper">
+          <div className="btn-wrapper">
             <button type="reset">Clear</button>
             <button type="submit">Submit</button>
           </div>
