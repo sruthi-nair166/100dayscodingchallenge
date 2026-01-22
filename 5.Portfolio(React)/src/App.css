@@ -273,3 +273,29 @@ textarea::placeholder {
 .btn-wrapper button:hover {
   background-color: grey;
 }
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  color: white;
+  background-color: black;
+  padding: 0 3rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: gainsboro;
+}
+
+#icon-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+footer img {
+  width: 20px;
+}

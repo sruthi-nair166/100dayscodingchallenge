@@ -9,6 +9,7 @@ import DrumMachine from "./assets/drum_machine.png";
 import Calculator from "./assets/calculator.png";
 import Pomodoro from "./assets/25+5_clock.png";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const projects = [
   {
@@ -77,6 +78,10 @@ function App() {
           <Contact />
         </section>
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
