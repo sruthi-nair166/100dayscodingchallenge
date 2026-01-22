@@ -8,6 +8,7 @@ This repository contains my daily coding work as part of a 100 day coding challe
 - CSS
 - Bootstrap
 - JavaScript
+- React
 
 ## Progress
 
