@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Limelight&display=swap");
+
 body {
   font-family: Calibri, sans-serif;
 }
@@ -47,4 +49,26 @@ nav a {
 
 nav a:hover {
   font-weight: 600;
+}
+
+/* intro */
+
+#intro {
+  height: 100vh;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#intro p {
+  font-family: "Elms Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+#intro h1 {
+  font-family: "Limelight", sans-serif;
+  font-size: 6rem;
+  line-height: 6rem;
 }
