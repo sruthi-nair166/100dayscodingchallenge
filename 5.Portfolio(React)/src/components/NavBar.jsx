@@ -1,3 +1,5 @@
+import menu from "../assets/menu_logo.png";
+
 function NavBar() {
   return (
     <>
@@ -8,7 +10,7 @@ function NavBar() {
         <a href="#contact">Contact</a>
       </nav>
       <button>
-        <img id="menu-logo" src="./images/menu_logo.png" alt="" />
+        <img id="menu-logo" src={menu} alt="" />
       </button>
     </>
   );
