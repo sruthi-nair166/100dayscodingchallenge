@@ -8,6 +8,7 @@ import MarkdownPreviewer from "./assets/markdown_previewer.png";
 import DrumMachine from "./assets/drum_machine.png";
 import Calculator from "./assets/calculator.png";
 import Pomodoro from "./assets/25+5_clock.png";
+import Contact from "./components/Contact";
 
 const projects = [
   {
@@ -70,6 +71,10 @@ function App() {
 
         <section id="projects">
           <Projects projects={projects} />
+        </section>
+
+        <section id="contact">
+          <Contact />
         </section>
       </main>
     </>
